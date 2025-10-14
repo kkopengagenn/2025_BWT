@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<!-- saved from url=(0040)http://127.0.0.1:5500/html/passport.html -->
+<html lang="en"><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Passport</title>
+    <link rel="stylesheet" href="./Passport_files/styles.css">
+    <script src="./Passport_files/app.js.Без названия" defer=""></script>
+</head>
+<body>
+
+<div class="wrapper">
+ <header class="container">
+        <nav>
+            <ul> 
+                <li><a href="http://127.0.0.1:5500/html/index.html">Main page</a></li>
+                <li><a href="https://en.wikipedia.org/wiki/Bubble_tea" target="_blank">About Boba</a></li>
+                <li class="active"><a href="http://127.0.0.1:5500/html/passport.html">Passport</a></li>
+                <li><a href="http://127.0.0.1:5500/html/task.html">3adacha</a></li>
+                <li><a href="http://127.0.0.1:5500/html/form.html">Form</a></li>
+
+            </ul>
+        </nav>
+    </header>
+</div>
+
+<div class="first">
+    <h3>ИЗМЕНЯЕМ КИРИЛЛИЦУ НА ЛАТИНИЦУ ПО КЛИКУ</h3>
+        <div class="passport" id="passport">
+            <img src="./Passport_files/blank.jpg" alt="blank-passport">
+            <p class="passport-place">ГУ МВД РОССИИ ПО Г. САНКТ-ПЕТЕРБУРГУ И ЛЕН. ОБЛАСТИ</p>
+            <p class="passport-date">29.09.2024</p>
+            <p class="code">123-321</p>
+            <img src="./Passport_files/Narf_signature.png" alt="signature" class="signature">
+            <p class="passport-lastname" id="lastname">Ахмадеева</p>
+            <p class="passport-name" id="name">Дания</p>
+            <p class="passport-otch" id="otch">Амировна</p>
+            <p class="gender" id="gender">ЖЕН.</p>
+            <p class="date" id="date">13.09.2004</p>
+            <p class="hometown" id="hometown">Г.ШАНХАЙ</p>
+            <img src="./Passport_files/passportphoto.png" alt="passport photo" class="passportphoto">
+        </div>
+        <button id="change" class="change">Click for English version</button>
+</div>
+
+<div class="second">
+    <h3>DOM_JS. СЧИТЫВАЕМ ИНФОРМАЦИЮ ИЗ DOM</h3>
+</div>
+
+    
+<!-- Code injected by live-server -->
+<script>
+	// <![CDATA[  <-- For SVG support
+	if ('WebSocket' in window) {
+		(function () {
+			function refreshCSS() {
+				var sheets = [].slice.call(document.getElementsByTagName("link"));
+				var head = document.getElementsByTagName("head")[0];
+				for (var i = 0; i < sheets.length; ++i) {
+					var elem = sheets[i];
+					var parent = elem.parentElement || head;
+					parent.removeChild(elem);
+					var rel = elem.rel;
+					if (elem.href && typeof rel != "string" || rel.length == 0 || rel.toLowerCase() == "stylesheet") {
+						var url = elem.href.replace(/(&|\?)_cacheOverride=\d+/, '');
+						elem.href = url + (url.indexOf('?') >= 0 ? '&' : '?') + '_cacheOverride=' + (new Date().valueOf());
+					}
+					parent.appendChild(elem);
+				}
+			}
+			var protocol = window.location.protocol === 'http:' ? 'ws://' : 'wss://';
+			var address = protocol + window.location.host + window.location.pathname + '/ws';
+			var socket = new WebSocket(address);
+			socket.onmessage = function (msg) {
+				if (msg.data == 'reload') window.location.reload();
+				else if (msg.data == 'refreshcss') refreshCSS();
+			};
+			if (sessionStorage && !sessionStorage.getItem('IsThisFirstTime_Log_From_LiveServer')) {
+				console.log('Live reload enabled.');
+				sessionStorage.setItem('IsThisFirstTime_Log_From_LiveServer', true);
+			}
+		})();
+	}
+	else {
+		console.error('Upgrade your browser. This Browser is NOT supported WebSocket for Live-Reloading.');
+	}
+	// ]]>
+</script>
+
+</body></html>

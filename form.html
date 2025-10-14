@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+ <title>Forms</title>
+<link rel="stylesheet" href="../css/styles.css">
+</head>
+<body>
+<div class="wrapper">
+ <header class="container">
+        <nav>
+            <ul> 
+                <li><a href="index.html">Main page</a></li>
+                <li><a href="https://en.wikipedia.org/wiki/Bubble_tea" target="_blank">About Boba</a></li>
+                <li><a href="passport.html">Passport</a></li>
+                <li><a href="task.html">3adacha</a></li>
+                <li class="active"><a href="form.html">Form</a></li>
+                <li><a href="tech.html">Table</a></li>
+                
+            </ul>
+        </nav>
+    </header>
+</div>
+
+<div class="contact-info">
+
+<h1>Forms → sending data to the server</h1>
+
+
+<form action="https://www.google.com/search" name="q" method="get" id="userenter" 
+target="_blank">
+
+  <h3>Send contact info</h3>
+  <p>
+    <label for="lastname">Lastname:</label>
+    <input type="text" name="lastname" required id="lastname">
+  </p>
+
+  <p>
+    <label for="name">Name:</label>
+    <input type="text" id="name" name="name" required>
+  </p>
+  
+  <p>
+    <label for="group">Group:</label>
+    <input type="text"id="group" name="group" required>
+  </p>
+
+  <p>
+    <label for="phone">Mobile phone:</label>
+    <input type="text" id="phone" name="phone" required>
+  </p>
+
+  <p>
+    <label for="email">Email:</label>
+    <input type="text" id="email" name="email" required>
+  </p>
+
+  <p>
+    <label for="date">Today's date:</label>
+    <input type="text" id="date" name="date" required>
+  </p>
+
+  <p>
+    <button type="submit">Send</button>
+  </p>
+</form>
+</div>
+
+
+<div class="all-forms" id="all-forms">
+<form action="https://www.google.com/search" method="get" id="form1" 
+target="_blank">
+  <h3>Choose a boba tea flavor</h3>
+  <h4>based on your preferences</h4>
+  <label for="fav_fruit">What's your favorite fruit?</label>
+  <input type="text" id="fav_fruit" name="fav_fruit" required value="mango">
+  <label for="water">How many litres of liquid do you usually drink?</label>
+  <input type="number" name="water" id="water" required value="2">
+
+  <fieldset>
+    <label for="milk">Which one do you prefer?<input type="checkbox" name="milk" id="milk" value="milk" required>
+    Milk</label>
+    <label>Tea<input type="checkbox" name="milk" id="milk" value="Tea"></label>
+    <label>Coffee<input type="checkbox" name="milk" id="milk" value="Coffee"></label>
+   </fieldset>
+  <label for="secret">Your secret about bubble tea!</label>
+  <input type="password" name="secret_boba" id="secret_boba">
+ 
+
+  <fieldset>
+    <legend>Which one do you want to visit more?</legend>
+    <label for="region"><input type="radio" name="fav_region" id="region" value="Thailand">Thailand</label>
+    <label for="region"><input type="radio" name="fav_region" id="region" value="South Korea">South Korea</label>
+    <label for="region"><input type="radio" name="fav_region" id="region" value="Japan">Japan</label>
+    <label for="region"><input type="radio" name="fav_region" id="region" value="China">China</label>
+</fieldset>
+
+<label for="day">When do you want to start you journey into the boba world?</label>
+<input type="date" name="date_of_boba_journey" id="date">
+</form>
+
+<input type="hidden" name="result_boba_pref" value="Boba Classic">
+
+<p>
+  <button type="submit" id="button1">Share your preferences
+    <br> with us!</button>
+</p>
+
+</div>
+
+
+</body>
+</html>
