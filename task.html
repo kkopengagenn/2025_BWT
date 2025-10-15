@@ -35,7 +35,7 @@
     она в дверь с размерами M × K.</p>
 
 <form id="task" action="https://www.google.com/search" method="get"
-target="_blank" name="q">
+target="_blank">
     <label for="A">Сторона A:</label>
     <input type="number" name="сторона А" required value="32" id="A"><br>
 
@@ -54,8 +54,13 @@ target="_blank" name="q">
     <label for="K">Высота двери K:</label>
     <input type="number" name="Высота двери" id="K" required value="270">
 
+    <input type="hidden" name="q" id="q">
+
+
     <button type="button" id="checkBtn">Проверить</button>
     <button type="submit">Отправить данные на сервер</button>
+
+    
 </form>
 
 <p id="result">(●'◡'●)</p>
@@ -66,5 +71,6 @@ target="_blank" name="q">
 </body>
 
 </html>
+
 
 
