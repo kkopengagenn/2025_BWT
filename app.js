@@ -34,16 +34,5 @@ function changeLang() {
 }
 
 
-const btnSize=document.getElementById("size");
-const imgDOM=document.getElementById("DOM_JS");
-
-btnSize.addEventListener("click",()=>{
-    if (imgDOM.classList.contains("big")) {imgDOM.classList.remove("big");
-        btnSize.textContent="Click for bigger version";
-    } else {
-        imgDOM.classList.add("big");
-        btnSize.textContent="Click for smaller version";
-    }
-})
 
 
