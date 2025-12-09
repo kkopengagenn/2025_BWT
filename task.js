@@ -5,7 +5,8 @@ function checkBox(){
     const M= Number(document.getElementById("M").value);
     const K= Number(document.getElementById("K").value);
 
-    const result=document.getElementById("result")
+    const result=document.getElementById("result");
+
 
 if (
     (A<=M && B<=K) || (A<=K && B<=M) ||
@@ -13,11 +14,15 @@ if (
     (B<=M && C<=K) || (B<=K && C<=M)) 
     {result.innerText="Коробка проходит в дверь!"; 
         alert("Коробка проходит в дверь!");
-}  else {result.innerText="Увы и ах! Не проходит :(";
-    alert ("Увы и ах! Не проходит :(");
+
+document.getElementById("task").submit();
+
+}  else {result.innerText="Не проходит. Измените данные!";
+    alert("Не проходит. Измените данные!");
 }
 }
+
+
 
 document.getElementById("checkBtn").addEventListener("click", checkBox)
-
 
