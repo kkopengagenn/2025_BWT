@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Feedback</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="../css/shop.css">
+    <script src="../js/shop.js" defer></script>
+    
+</head>
+<body class="bg-light">
+    <nav class="navbar navbar-expand-lg navbar-light bg-light">
+        <div class="container">
+            <a class="navbar-brand" href="index.html">Boba Tea Shop</a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#mainNav">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="mainNav">
+                <ul class="navbar-nav ms-auto">
+                    <li class="nav-item"><a class="nav-link" href="index.html">Main page</a></li>
+                    <li class="nav-item"><a class="nav-link" href="https://en.wikipedia.org/wiki/Bubble_tea" target="_blank">About Boba</a></li>
+                    <li class="nav-item"><a class="nav-link" href="passport.html">Passport</a></li>
+                    <li class="nav-item"><a class="nav-link" href="task.html">Task</a></li>
+                    <li class="nav-item"><a class="nav-link" href="form.html">Form</a></li>
+                    <li class="nav-item"><a class="nav-link" href="shop_2.html">Shop</a></li>
+                    <li class="nav-item"><a class="nav-link active" href="form_2.html">Feedback</a></li>
+
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+
+
+<div class="container mt-5">
+    <h2 class="text-center mb-4">Send Feedback</h2>
+
+    <form id="feedbackForm" class="p-4 bg-white shadow-sm rounded">
+
+        
+        <div class="mb-3">
+            <label class="form-label">Your Name:</label>
+            <input type="text" name="userName" class="form-control" value="DDD" required>
+        </div>
+
+        <div class="mb-3">
+            <label class="form-label">How many drinks you bought?</label>
+            <input type="number" name="drinksBought" min="1" value="2" class="form-control" required>
+        </div>
+
+        <div class="mb-3">
+            <label class="form-label">What did you like most?</label><br>
+            <input type="radio" name="likedMost" value="taste" required> Taste <br>
+            <input type="radio" name="likedMost" value="price" checked> Price <br>
+            <input type="radio" name="likedMost" value="service"> Service <br>
+        </div>
+
+
+
+        <button type="submit" class="btn btn-primary w-100">Send Feedback</button>
+    </form>
+
+    <p id="status" class="text-center mt-3"></p>
+</div>
+
+</body>
+</html>
