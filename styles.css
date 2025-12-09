@@ -247,6 +247,7 @@ form#userenter label{
 .first h3{
     position: absolute;
     left: 600px;
+    top: 40px;
 }
 
 #change{
@@ -374,6 +375,7 @@ form#userenter label{
     width: 60%;
     margin: 15px auto;
     box-shadow: 0 2px 6px #8b8b8b;
+    border-color: #fd2828
 }
 
 #cup{
