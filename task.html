@@ -4,28 +4,33 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Решение алгоритмической задачи</title>
-    <link rel="stylesheet" href="
-        styles.css">
-    <script src="
-        task.js" defer></script>
+    <link rel="stylesheet" href="../css/styles.css">
+    <script src="../js/task.js" defer></script>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
 
 
 </head>
 <body>
-<div class="wrapper">
- <header class="container">
-        <nav>
-            <ul> 
-                <li><a href="index.html">Main page</a></li>
-                <li><a href="https://en.wikipedia.org/wiki/Bubble_tea" target="_blank">About Boba</a></li>
-                <li><a href="passport.html">Passport</a></li>
-                <li class="active"><a href="task.html">3adacha</a></li>
-                <li><a href="form.html">Form</a></li>
+    <nav class="navbar navbar-expand-lg navbar-light bg-light">
+  <div class="container">
+    <a class="navbar-brand" href="index.html">Boba tea </a>
 
-            </ul>
-        </nav>
-    </header>
-</div>
+    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#mainNav">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+
+    <div class="collapse navbar-collapse" id="mainNav">
+      <ul class="navbar-nav ms-auto">
+        <li class="nav-item"><a class="nav-link" href="index.html">Main page</a></li>
+        <li class="nav-item"><a class="nav-link" href="https://en.wikipedia.org/wiki/Bubble_tea" target="_blank">About Boba</a></li>
+        <li class="nav-item"><a class="nav-link" href="passport.html">Passport</a></li>
+        <li class="nav-item"><a class="nav-link" href="task.html">3adacha</a></li>
+        <li class="nav-item"><a class="nav-link" href="form.html">Form</a></li>
+        <li class="nav-item"><a class="nav-link active" href="shop_2.html">Shop</a></li>
+      </ul>
+    </div>
+  </div>
+</nav>
 
 <div class="task">
     
@@ -36,54 +41,38 @@
 
 <form id="task" action="https://www.bing.com/search?" method="get"
 target="_blank">
-<p><input type="hidden"  name="q" value="search"></p>
+    <input type="hidden" name="result" id="result" value="">
+
+    <p>Для поисковика:<input type="hidden"  name="q" value="search"></p>
 
     <label for="A">Сторона A:</label>
-    <input type="number" name="A" required value="32" id="A" min="0"><br>
+    <input type="number" name="сторона А" required value="32" min="0"  id="A"><br>
 
     <label for="B">Сторона B:</label>
-    <input type="number" name="B" id="B" required value="21" min="0"><br>
+    <input type="number" name="сторона Б" id="B" required value="21" min="0"><br>
 
 
     <label for="C">Сторона C:</label>
-    <input type="number" name="C" id="C" required value="10" min"0"><br>
+    <input type="number" name="сторона С" id="C" required value="10" min="0"><br>
 
 
     <label for="M">Ширина двери M:</label>
-    <input type="number" name="M" id="M" required value="100" min="0"><br>
+    <input type="number" name="Ширина двери" id="M" required value="100" min="0"><br>
 
 
     <label for="K">Высота двери K:</label>
-    <input type="number" name="K" id="K" required value="270" min="0">
+    <input type="number" name="Высота двери" id="K" required value="270" min="0">
 
     
+    <button type="button" id="checkBtn">Проверить и отправить</button>
 
 
-    <input type="hidden" name="q" id="q">
-    
-    <button type="button" id="checkBtn">Проверить</button>
-    <button type="submit">Отправить данные на сервер</button>
-
-    
 </form>
 
-<p id="result">(●'◡'●)</p>
+<p>(●'◡'●)</p>
 
 </div>
 
 
 </body>
-
 </html>
-
-
-
-
-
-
-
-
-
-
-
-
