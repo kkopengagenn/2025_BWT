@@ -22,3 +22,9 @@ list-style: none;
     color: rgb(25, 26, 26);
 }
 
+
+.card {
+    background-color: #ffe6f0;  
+    border: 2px solid #ff99cc;       
+}
+
